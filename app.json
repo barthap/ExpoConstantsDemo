@@ -1,8 +1,11 @@
 {
   "expo": {
-    "name": "app-constants-demo",
-    "slug": "app-constants-demo",
-    "version": "1.0.0",
+    "name": "App.json Name",
+    "description": "App.json description",
+    "slug": "app-slug",
+    "version": "1.2.3",
+    "scheme": "myscheme",
+
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -11,16 +14,22 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "enabled": false
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "my.ios.bundleId",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "my.android.package",
+      "versionCode": 234
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name": "Web name",
+      "description": "Web description"
     }
   }
 }
