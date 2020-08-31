@@ -5,7 +5,6 @@
     "slug": "app-slug",
     "version": "1.2.3",
     "scheme": "myscheme",
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -16,20 +15,28 @@
     "updates": {
       "enabled": false
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "my.ios.bundleId",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "my.android.package",
+      "package": "my.android.packag",
       "versionCode": 234
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "name": "Web name",
       "description": "Web description"
-    }
+    },
+    "sdkVersion": "38.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
   }
 }

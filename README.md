@@ -745,28 +745,81 @@ Constants:
 
 ## Ejected to bare workflow and buit locally
 
+When ejecting, I realised that `my.android.package` is not a valid Android Application ID, because word `package` is reserved keyword. I replaced it with `packag`
+
 ### iOS
 
 Application:
 ```json
-
+{
+  "nativeApplicationVersion": "1.2.3",
+  "nativeBuildVersion": "1.0.0",
+  "applicationName": "App.json Name",
+  "applicationId": "my.ios.bundleId",
+  "androidId": null
+}
 ```
 
 Constants:
 ```json
-
+{
+  "platform": {
+    "ios": {
+      "platform": "x86_64",
+      "systemVersion": "13.6",
+      "model": "Simulator",
+      "userInterfaceIdiom": "handset",
+      "buildNumber": "1.0.0"
+    }
+  },
+  "isDevice": false,
+  "sessionId": "AB57836C-UUID-HERE-B97D-AA5C7F0FA2A2",
+  "isHeadless": false,
+  "nativeAppVersion": "1.2.3",
+  "deviceYearClass": 2020,
+  "deviceName": "iPhone 11",
+  "installationId": "79C8E8F4-UUID-HERE-AE22-627A6502673C",
+  "nativeBuildVersion": "1.0.0",
+  "debugMode": true,
+  "statusBarHeight": 44,
+  "appOwnership": null,
+  "manifest": null,
+  "deviceId": "79C8E8F4-UUID-HERE-AE22-627A6502673C"
+}
 ```
 
 ### Android
 
 Application:
 ```json
-
+{
+  "nativeApplicationVersion": "1.2.3",
+  "nativeBuildVersion": "234",
+  "applicationName": "App.json Name",
+  "applicationId": "my.android.packag",
+  "androidId": "a3bf6b8759f42e41"
+}
 ```
 
 Constants:
 ```json
-
+{
+  "nativeAppVersion": "1.2.3",
+  "nativeBuildVersion": "234",
+  "platform": {
+    "android": {}
+  },
+  "deviceYearClass": 2013,
+  "systemVersion": "9",
+  "deviceName": "AOSP on IA Emulator",
+  "installationId": "7d52ecbe-UUID-HERE-a882-680f3bcf15ca",
+  "sessionId": "d1da5914-UUID-HERE-84ea-741d735b426f",
+  "statusBarHeight": 24,
+  "isDevice": false,
+  "appOwnership": null,
+  "manifest": null,
+  "deviceId": "7d52ecbe-UUID-HERE-a882-680f3bcf15ca"
+}
 ```
 
 ### Web
